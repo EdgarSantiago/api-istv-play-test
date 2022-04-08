@@ -59,11 +59,8 @@ function App() {
   return (
     <div className="App">
       <form onSubmit={registerLead}>
-
         <button type="submit">Testar</button>
-
       </form>
-     
     </div>
   );
 }
