@@ -5,14 +5,14 @@ import axios from 'axios'
 function App() {
     {/*https://yourimsurl/api/sectionname/apiname */}
 
-  const [firstName, setFirstName] = useState("Edgar")
-  const [lastName, setLastName] = useState("Santiago")
-  const [street, setStreet] = useState("Adoniran")
+  const [firstName, setFirstName] = useState("teste")
+  const [lastName, setLastName] = useState("teste")
+  const [street, setStreet] = useState("teste")
   const [zipcode, setZipcode] = useState("11451360")
   const [city, setCity] = useState("Guarujá")
   const [state, setState] = useState("SP")
   const [country, setCountry] = useState("Brazil")
-  const [phone, setPhone] = useState("33236905")
+  const [phone, setPhone] = useState("123123123")
   const [mobile, setMobile] = useState("+31233344455")
   const [email, setEmail] = useState("edgar@istv@gmail.com.br")
   const [productid, setProductid] = useState(1)
@@ -27,8 +27,7 @@ function App() {
   const [success, setSuccess] = useState("")
 
   const registerLead = async event =>  {
-    event.preventDefault() // don't redirect the page
-    // where we'll add our form logic
+    event.preventDefault()
     await axios
     .post("https://istv.imsserver1.tv/api/AddCustomer/addCustomer", {
       firstName:  firstName,
@@ -59,7 +58,7 @@ function App() {
   return (
     <div className="App">
       <form onSubmit={registerLead}>
-        <button type="submit">Testar</button>
+        <button type="submit">Send</button>
       </form>
     </div>
   );
