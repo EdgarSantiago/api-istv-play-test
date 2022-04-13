@@ -31,7 +31,7 @@ function App() {
     event.preventDefault();
     await axios
       .post(
-        "https://istv.imsserver1.tv/api/AddCustomer/addCustomer?firstname=test&lastname=test&street=test&zipcode=test&city=test&state=test&country=India&phone=9876544321&mobile=%2B188855558888&email=testing%40gte.ctes&productid=6&subscriptionlengthinmonths=2&subscriptionlengthindays=0&renewalinterval=2&cmsService=Dutch&crmService=Premier&authToken=32d96810-6e43-431f-8e16-bbc5695cb812",
+        "https://istv.imsserver1.tv/api/AddCustomer/addCustomer?firstname=test&lastname=test&street=test&zipcode=test&city=test&state=test&country=India&phone=9876544321&mobile=%2B188855558888&email=testing%40gte.ctes&productid=6&subscriptionlengthinmonths=2&subscriptionlengthindays=0&renewalinterval=2&cmsService=SandBox&crmService=ISTV&authToken=32d96810-6e43-431f-8e16-bbc5695cb812",
         {}
       )
       .then((response) => {
